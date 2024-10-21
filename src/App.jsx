@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css'
 import Description from './components/Description/Description.jsx';
 import Options from './components/Options/Options.jsx';
@@ -11,18 +11,20 @@ export default function App() {
     bad: 0
   });
   
-  const handleFeedback = (type) => {
+  const updateFeedback = feedbackType => {
     setFeedback((prevFeedback) => ({
       ...prevFeedback,
-      [type]: prevFeedback[type] + 1
+      [feedbackType]: prevFeedback[feedbackType] + 1
     }));
   };
+
+  const totalFeedback = feedback.good + feedback.neutral + feedback.bad;
   
   return (
     <div>
       <Description/>
-      <Options onLeaveFeedback={handleFeedback} />
-      <Feedback feedback={feedback} />
+      <Options onLeaveFeedback={updateFeedback} />
+      <Feedback feedback={feedback} total={totalFeedback} />
     </div>
   );
 }
