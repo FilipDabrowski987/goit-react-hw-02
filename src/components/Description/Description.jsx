@@ -3,7 +3,7 @@ import './Description.css';
 const Description = () => {
   return (
       <div>
-          <p className="cafe-name">Sip Happens Café</p>
+          <h1 className="cafe-name">Sip Happens Café</h1>
           <p className="cafe-name-paragraf">Please leave your feedback about our service by selecting one of the options below.</p>
       </div>
   );
