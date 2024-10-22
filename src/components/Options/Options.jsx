@@ -4,7 +4,7 @@
 
 const Options = ({ onLeaveFeedback, onReset, total }) => {
   return (
-    <div>
+    <div className="options-container">
       <button onClick={() => onLeaveFeedback('good')}>Good</button>
       <button onClick={() => onLeaveFeedback('neutral')}>Neutral</button>
       <button onClick={() => onLeaveFeedback('bad')}>Bad</button>
