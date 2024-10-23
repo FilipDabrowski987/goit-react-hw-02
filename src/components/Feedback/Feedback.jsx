@@ -1,4 +1,3 @@
-// import React from 'react';
 import Notification from "../Notification/Notification.jsx";
 
 const positiveFeedback = ({ good, neutral, total }) => {

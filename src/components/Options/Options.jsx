@@ -1,7 +1,3 @@
-// import React from 'react';
-
-// import total from ./Feedback/Feedbac.jsx
-
 const Options = ({ onLeaveFeedback, onReset, total }) => {
   return (
     <div className="options-container">

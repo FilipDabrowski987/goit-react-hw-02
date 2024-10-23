@@ -29,14 +29,6 @@ export default function App() {
       bad: 0
     })
   
-  // const savedFeedback = window.localStorage.getItem("saved-feedback");
-
-  // if (savedFeedback !== null) {
-  //   return JSON.parse(savedFeedback);
-  // }
-
-  // return {};
-  
   useEffect(() => {
     window.localStorage.setItem("saved-feedback", JSON.stringify(feedback));
   }, [feedback]);
